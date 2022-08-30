@@ -9,14 +9,9 @@ Console.WriteLine(GetSumNum(num));
 
 int GetSumNum(int n){
     int sum = 0;
-    if(n > 9){
-        while(n > 0){
-            sum += n % 10;
-            n /= 10;
-        }
-        return sum;
+    while(n > 0){
+        sum += n % 10;
+        n /= 10;
     }
-    else{
-        return n;
-    }
+    return sum;
 }
